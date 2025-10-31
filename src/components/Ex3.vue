@@ -22,7 +22,7 @@
                     return 'http://localhost:3000'
                 else {
                     const codespace_host = window.location.hostname.replace('5173', '3000')
-                    return https://${codespace_host};
+                    return `https://${codespace_host}`;
                 }
             }
         },

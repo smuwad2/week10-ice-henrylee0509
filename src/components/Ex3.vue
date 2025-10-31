@@ -11,6 +11,9 @@
                 posts: [] // array of post objects
             }  
         },
+        components:{
+            blogPost
+        },
         computed: {
             baseUrl() {
                 if (window.location.hostname == 'localhost')
@@ -35,7 +38,7 @@
         methods: {
             deletePost(id) {
                 // TODO: Complete the delete method
-                axios.get(`${this.baseURL}/deletePost`,{
+                axios.get(`${this.baseUrl}/deletePost`,{
                     params: {
                         id: id
                     }
@@ -58,8 +61,8 @@
 
 <template>
    <!-- TODO: make use of the 'blog-post' component to display the blog posts -->
-    <blog-post v-for="post in posts" :subject="post.subject" :entry="post.entry" :mood="post.mood">
+    <blogPost v-for="post in posts" :subject="post.subject" :entry="post.entry" :mood="post.mood">
         <button class="btn btn-primary" @click="deletePost(post.id)">Delete</button>
-    </blog-post>
+    </blogPost>
 </template>
 

@@ -23,7 +23,7 @@
             <img :src="imgLoc" class="card-img-top" ></img>
             <div>
                 <div class="card-title">{{ subject }}</div>
-                <div class="card-text">{{ entry }}</div>
+                <p class="card-text">{{ entry }}</p>
             </div>
             <slot></slot>
         </div>

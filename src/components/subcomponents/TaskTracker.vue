@@ -23,7 +23,7 @@
         <div class="card-body">
             <div class="card-title">Deadline: {{ task.deadline }}</div>
             <hr></hr>
-            <div class="card-text">{{ task.desc }}</div>
+            <p class="card-text">{{ task.desc }}</p>
             <button class="btn btn-primary" @click="$emit('removeTask', idx)">Done</button>
         </div>
     </div>

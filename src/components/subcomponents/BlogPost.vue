@@ -21,9 +21,9 @@
     <div>
         <div class="card mb-3" style="width: 18rem;">
             <img :src="imgLoc" class="card-img-top" ></img>
-            <div>
+            <div class="card-body">
                 <div class="card-title">{{ subject }}</div>
-                <div class="card-text">{{ entry }}</div>
+                <p class="card-text">{{ entry }}</p>
             </div>
         </div>
     </div>

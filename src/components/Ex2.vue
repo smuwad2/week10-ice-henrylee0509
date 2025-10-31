@@ -37,6 +37,6 @@ export default {
 
 <template>
     <!-- TODO: make use of the 'blog-post' component to display the blog posts -->
-    <blog-post v-for="post in posts" :subject="post.subject" :entry="post.entry" :mood="post.mood">
-    </blog-post>
+    <blogPost v-for="post in posts" :subject="post.subject" :entry="post.entry" :mood="post.mood">
+    </blogPost>
 </template>
